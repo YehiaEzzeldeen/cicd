@@ -1,11 +1,11 @@
 Resources:
-Ec2Instance:
- Type: 'AWS::EC2::Instance'
- Properties:
-   SecurityGroups:
-     - !Ref InstanceSecurityGroup
-   KeyName: udacity
-   ImageId: 'ami-0f342fc8564085485'
+ Ec2Instance:
+  Type: 'AWS::EC2::Instance'
+  Properties:
+    SecurityGroups:
+      - !Ref InstanceSecurityGroup
+    KeyName: udacity
+    ImageId: 'ami-0f342fc8564085485'
 InstanceSecurityGroup:
  Type: 'AWS::EC2::SecurityGroup'
  Properties:
